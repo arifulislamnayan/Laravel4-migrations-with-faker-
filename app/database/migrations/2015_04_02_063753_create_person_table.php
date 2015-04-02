@@ -16,17 +16,12 @@ class CreatePersonTable extends Migration {
         {
             $table->increments('id');
             $table->string('name', 250);
-            $table->string('email');
-            $table->text('description');
-            $table->string('country');
-            $table->string('address');
-            $table->string('postcode');
-            $table->string('telephone');
-            $table->string('code');
+            
+            $table->text('bio');
             $table->timestamps();
         });
 	}
-	
+
 
 	/**
 	 * Reverse the migrations.
